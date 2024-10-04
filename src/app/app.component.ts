@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { FooterComponent } from './components/footer/footer.component';
+import { ClientaddComponent } from './components/clientadd/clientadd.component';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet,FooterComponent,ClientaddComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  title = 'tp-angular';
+}
